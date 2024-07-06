@@ -22,6 +22,9 @@ public class AuthorService implements CrudService<AuthorDTO> {
     @Override
     public List<AuthorDTO> findAll() {
         List<AuthorDTO> authorDTOList = new ArrayList<>();
+        System.out.println("bikku's second project")
+        System.out.println("bikku's third project")
+        System.out.println("bikku's fourth project")
         authorRepository.findAll().forEach(author -> authorDTOList.add(INSTANCE.authorToDto(author)));
         return authorDTOList;
     }
