@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthorController extends CrudController<AuthorDTO> {
 
     public AuthorController(AuthorService authorService) {
+        System.out.println("bikku's first project")
         super(authorService);
     }
 }
